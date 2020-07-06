@@ -11,12 +11,21 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var evolve: UIButton!
 
+    @IBOutlet weak var startStop: UIButton!
     @IBOutlet weak var deevolve: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     var timer : Timer!
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let viewControler2: ViewController2 = segue.destination as! ViewController2
         viewControler2.imageNo = imageNumber
+        if timer != nil {
+            self.timer.invalidate()
+            self.timer = nil
+            startStop.setTitle("見守る", for: .normal)
+            evolve.isEnabled = true
+            deevolve.isEnabled = true
+        }
+       
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,8 +90,7 @@ class ViewController: UIViewController {
     
     }
     
-    @IBAction func tapImage(_ sender: Any) {
-    }
+ 
     @IBAction func unwind(_ segue: UIStoryboardSegue){
         
     }

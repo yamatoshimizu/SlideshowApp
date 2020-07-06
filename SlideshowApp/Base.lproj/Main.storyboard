@@ -97,13 +97,13 @@
                         <outlet property="deevolve" destination="Pbt-fw-63x" id="XRq-tu-sT2"/>
                         <outlet property="evolve" destination="oyJ-B2-e5Q" id="rPs-mB-t2U"/>
                         <outlet property="imageView" destination="EPS-nT-tSc" id="nGc-Rr-DaL"/>
+                        <outlet property="startStop" destination="V6T-3V-qkT" id="Wdi-56-yYd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="fLc-Kt-edY">
                     <connections>
-                        <action selector="tapImage:" destination="BYZ-38-t0r" id="aoZ-Cp-8gj"/>
-                        <segue destination="o8c-bs-nJi" kind="show" id="hNb-IE-OAs"/>
+                        <segue destination="o8c-bs-nJi" kind="show" id="qlZ-rH-Wdw"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
